@@ -120,7 +120,7 @@ color: #fe320a;
     display: block;
     height: 15px;
     width: 15px;
-    background-color: red;
+    background-color: #fe320a;
     border-radius: 50%;
     top: 82%;
     left: 44%;
@@ -131,7 +131,6 @@ color: #fe320a;
 }
 .about-content .about-box{
     display:flex;
-    align-items: left;
     padding-bottom: 50px;
 }
 .about-content .left{
@@ -230,3 +229,59 @@ color: #fe320a;
     color: white;
     font-size: 70px;
 }
+/* About Section Style End */
+
+/* Our Service Style */
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service .heading-text{
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 19px;
+    position: relative;
+}
+.service .heading-text h2{
+    padding-bottom: 6px;
+    position: relative;
+}
+.service .heading-text h2::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #fe320a;
+    border-radius: 50%;
+    top: 82%;
+    left: 48%;
+    position: absolute;
+}
+.service .heading-text .hr{
+    border: 1px solid #fe320a;
+}
+.service .service-box{
+    padding-bottom: 20px;
+}
+.service .service-box .col{
+    width: 29.33%;
+    margin: 2%;
+    float: left;
+    text-align: center;
+}
+.service .service-box .col a{
+    font-size: 40px;
+    color: #fe320a;
+}
+.service .service-box .col h2{
+    font-size: 20px;
+    padding:12px;
+}
+.service .service-box .col p{
+    font-size: 13px;
+}
+/*Our Service Style End */
+/* Skill Style */
+
