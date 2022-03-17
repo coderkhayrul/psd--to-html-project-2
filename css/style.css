@@ -196,3 +196,37 @@ color: #fe320a;
     border: none;
     border-radius: 3px;
 }
+
+.about-banner{
+    background-image: url("../images/aboutUs.png");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.about-banner ::after{
+    content: "";
+    clear: both;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about-banner h2{
+    color: white;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+.about-banner a{
+    color: white;
+    font-size: 70px;
+}
