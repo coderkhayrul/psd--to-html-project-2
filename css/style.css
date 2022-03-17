@@ -1,0 +1,97 @@
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}
+.container{
+    padding: 0 15%;
+}
+.text-primary{
+color: #fe320a;
+}
+/* Global Style End */
+/* Header Style */
+.menu{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.527);
+    overflow: hidden;
+    z-index: 2;
+    width:75%
+}
+.menu .left{
+    float: left;
+}
+.menu .left img{
+    padding: 15px;
+    width: 70%;
+}
+.menu .right{
+    float: right;
+}
+.menu .right ul{
+    list-style: none;
+    display: flex;
+    padding: 35px;
+
+}
+.menu .right ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 0 6px;
+    font-weight: 500px;
+    font-size: 14px;
+
+}
+.header-content{
+    background-image: url("../images/head.png");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.header-content::after{
+    content: "";
+    clear: both;
+    display: block;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.header-content h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+    color: white;
+}
+.header-content p{
+    font-size: 15px;
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header-content button {
+    font-size: 19px;
+    padding: 14px 42px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #fe320a;
+    border: none;
+    border-radius: 3px;
+}
