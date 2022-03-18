@@ -284,4 +284,147 @@ color: #fe320a;
 }
 /*Our Service Style End */
 /* Skill Style */
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+.skill .heading-text{
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 19px;
+    position: relative;
+}
+.skill .heading-text h2{
+    padding-bottom: 6px;
+    position: relative;
+}
+.skill .heading-text h2::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #fe320a;
+    border-radius: 50%;
+    top: 82%;
+    left: 48%;
+    position: absolute;
+}
+.skill .heading-text .hr{
+    border: 1px solid #fe320a;
+}
+.skill-box{
+    display: flex;
+    margin-bottom: 30px;
+}
+.skill-box .col{
+    width: 48%;
+    padding: 10px;
+}
+.skill-box .col h2{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.skill-box .col p{
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: rgb(105, 105, 104);
+}
+.skill-box .col .skill-progress .progress{
+    width: 100%;
+    height: 15px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.skill-box .col .skill-progress .progress .bar{
+    height: 4px;
+    background-color: #fe320a;
+    border-radius: 50px;
+    padding: 2px;
+    margin-left: 5px;
+    text-align: right;
+}
+.skill-box .col .skill-progress .progress span{
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
 
+.web-design-score{
+    width: 60%;
+    margin-right: 130px;
+}
+.web-dev-score{
+    width: 70%;
+    margin-right: 90px;
+
+}
+.graphice-score{
+    width: 80%;
+    margin-right: 46px;
+
+}
+.skill .skill-banner{
+    background-image: url("../images/client.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.skill .skill-banner::after{
+    content: "";
+    clear: both;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.skill .skill-banner .skill-banner-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35.5px;
+}
+.skill .skill-banner .col{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.skill .skill-banner .col a{
+    color: #f3f3f3;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin: 10px;
+
+}
+.skill .skill-banner .col span{
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.skill .skill-banner .col p{
+    color: #f3f3f3;
+    font-size: 22px;
+    font-weight: bold;
+}
