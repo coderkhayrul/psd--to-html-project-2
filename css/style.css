@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Raleway', sans-serif;
+    /* width: ; */
     /* margin: 0;
     padding: 0; */
 }
@@ -466,7 +467,7 @@ color: #fe320a;
     flex-direction: column;
     align-items: center;
     background-color: #f3f3f3;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .portfolio .heading-text {
@@ -552,18 +553,19 @@ color: #fe320a;
 }
 
 .portfolio .portfolio-box .portfolio-image .col img{
-    width: 349px;
+    width: 295px;
 }
 /* My Team Style */
 .team{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color:darkgray;
+    padding-bottom: 50px;
 }
 .team .heading-text {
     text-transform: uppercase;
-    padding: 50px 0;
+    padding: 15px 0;
     font-size: 19px;
     position: relative;
 }
@@ -590,3 +592,73 @@ color: #fe320a;
     border: 1px solid #fe320a;
 }
 
+/* Team Image Section */
+
+.team-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .image{
+    position: relative;
+    padding: 12px;
+
+}
+.team .image img{
+    border-bottom: 5px solid #fe320a;
+    height: 250px;
+    width: 210;
+
+}
+.team .image .social{
+    background-color: #fe320a;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    /* display:none; */
+}
+.team .image:hover .social{
+    background-color: #fe320a;
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+    right: 11px;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    opacity: 1;
+    /* display: none; */
+}
+
+.team .image .social h4{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.team .image .social ul{
+    display: flex;
+    justify-content: center;
+}
+.team .image .social ul{
+    list-style: none;
+}
+
+.team .image .social ul li{
+    padding-right: 10px;
+}
+.team .image .social ul li a{
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+}
+
+.team .image .social ul li a:hover{
+    background-color: white;
+    color: black;
+}
