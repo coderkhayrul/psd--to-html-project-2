@@ -606,8 +606,7 @@ color: #fe320a;
 }
 .team .image img{
     border-bottom: 5px solid #fe320a;
-    height: 250px;
-    width: 210;
+    width:220px;
 
 }
 .team .image .social{
@@ -620,7 +619,6 @@ color: #fe320a;
     text-align: center;
     padding: 20px;
     opacity: 0;
-    /* display:none; */
 }
 .team .image:hover .social{
     background-color: #fe320a;
