@@ -467,7 +467,6 @@ color: #fe320a;
     flex-direction: column;
     align-items: center;
     background-color: #f3f3f3;
-    padding: 20px 0;
 }
 
 .portfolio .heading-text {
@@ -530,6 +529,7 @@ color: #fe320a;
 .portfolio .portfolio-box .portfolio-image {
     align-items: center;
     align-content: center;
+    padding-bottom: 35px;
 }
 .portfolio .portfolio-box .portfolio-image .col{
     float: left;
@@ -561,7 +561,6 @@ color: #fe320a;
     flex-direction: column;
     align-items: center;
     background-color:darkgray;
-    padding-bottom: 50px;
 }
 .team .heading-text {
     text-transform: uppercase;
@@ -596,60 +595,53 @@ color: #fe320a;
 }
 .team .team-content .image img {
     width: 180px;
-    border-bottom: 6px solid #fe320a;
 }
 
 .team .team-content .image{
     position: relative;
-    margin-left: 20px;
-    z-index: 1;
-}
-<<<<<<< HEAD
-.team .image img{
     border-bottom: 5px solid #fe320a;
-    width:220px;
-=======
-
-.team .team-content .image:hover .team-social {
-    display: block;
->>>>>>> 2b982ef761bca8e4d469836743754bf723a41bd8
-
+    margin: 15px;
+}
+.team .team-content .image .overlay{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 30, 0, 0.5);
+    display: none;
 }
 
-.team .team-content .image .team-social {
+.team .team-content .image:hover .overlay{
+    display: block;
+}
+
+.team .team-content .image .overlay .team-social {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #fe320a;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     right: 0;
-<<<<<<< HEAD
-    color: white;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-=======
-    display: none;
->>>>>>> 2b982ef761bca8e4d469836743754bf723a41bd8
 }
 
-.team .team-content .image .team-social h4{
+.team .team-content .image .overlay .team-social h4{
     color: #fff;
     padding-top: 3px;
     text-align: center;
 }
-.team .team-content .image .team-social ul{
+.team .team-content .image .overlay .team-social ul{
     list-style: none;
     display: flex; 
     justify-content: center;
 }
-.team .team-content .image .team-social ul li{
+.team .team-content .image .overlay .team-social ul li{
     padding: 3px;
 }
-.team .team-content .image .team-social ul li a{
+.team .team-content .image .overlay .team-social ul li a{
     text-decoration: none;
     color: white;
 }
@@ -693,4 +685,68 @@ color: #fe320a;
     text-align: center;
     font-size: 15px;
     font-weight: 100;
+}
+/* Blog Section Style */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #f3f3f3; */
+}
+
+.blog .heading-text {
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 19px;
+    position: relative;
+}
+
+.blog .heading-text h2 {
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.blog .heading-text h2::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #fe320a;
+    border-radius: 50%;
+    top: 82%;
+    left: 48%;
+    position: absolute;
+}
+
+.blog .heading-text .hr {
+    border: 1px solid #fe320a;
+}
+.blog .blog-content{
+    display: flex;
+    margin-bottom: 40px;
+}
+/* Blog Col */
+.blog .blog-content .col{
+    margin: 0;
+}
+.blog .blog-content .col img{
+    width: 270px;
+    box-shadow: 0 10px #555555;
+}
+.blog .blog-content .col h4{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.blog .blog-content .col p{
+    padding: 10px 0;
+}
+.blog .blog-content .col button{
+    color: #f3f3f3;
+    background-color: black;
+    height: 28px;
+    width: 90px;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
 }
