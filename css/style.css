@@ -833,5 +833,123 @@ body {
 }
 /* Blog Section Style End */
 /* Contact Us Section Style */
+.contact-us {
+    background-image: url('../images/contact-image.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    position: relative;
+}
+.contact-us::after {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
+.contact-us .heading-text {
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 19px;
+    position: relative;
+}
+
+.contact-us .heading-text h2 {
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.contact-us .heading-text h2::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: #fe320a;
+    border-radius: 50%;
+    top: 82%;
+    left: 48%;
+    position: absolute;
+}
+
+.contact-us .heading-text .hr {
+    border: 1px solid #fe320a;
+}
+
+
+
+
+.contact-us .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.contact-us .contact-form .contact-input {
+    margin-bottom: 20px;
+}
+.contact-us .contact-form .contact-input input {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    height: 30px;
+    width: 280px;
+    color: #fff;
+    padding: 5px;
+}
+.contact-us .contact-form textarea {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 150px;
+    width: 600px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 5px;
+}
+.contact-us .contact-form .contact-input input::placeholder {
+    color: white;
+}
+.contact-us .contact-form textarea::placeholder {
+    color: white;
+}
+.contact-us .contact-form button {
+    color: #fff;
+    background-color: #fe320a;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
 /* Contact Us Section Style End*/
+/* Footer Section Style */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: #1a1919;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+}
+.footer ul li{
+    margin: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer span {
+    
+    color: #fff;
+}
+/* Footer Section End */
